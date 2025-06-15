@@ -1,10 +1,10 @@
-## Meme Coin Website Template (Solana Edition)
+## Art-Based NFT Project Website Template (Ethereum Edition)
 
-This is a Next.js project bootstrapped with create-next-app. It serves as a lightweight template for nft art projects, especially those supporting community growth and Web3 adoption—straight from the NFT culture on Ethereum.
+This is a Next.js project bootstrapped with create-next-app. It serves as a lightweight template for nft art project, especially those supporting community growth and Web3 adoption—straight from the NFT culture on Ethereum.
 
 Use it as a base to launch your own NFT website. Just swap out the content, logo, and links—ship it and let the memes do the marketing.
 
-🧪 Live Demo: [https://whims.fun/](https://whimsywolves.com/)
+🧪 Live Demo: [https://whimsywolves.com/](https://whimsywolves.com/)
 
 
 ## Getting Started
