@@ -9,16 +9,16 @@ import Link from "next/link";
 const Team = ({ sectionClass }: { sectionClass?: string }) => {
   const teamContent = [
     {
-      position: "Founder",
-      social: "@aspirasean",
-      socialLink: "https://x.com/aspirasean",
-      picture: founder,
+      position: "FOUNDER | ARTIST",
+      social: "@edsakunt",
+      socialLink: "https://x.com/edsakunt",
+      picture: artist,
     },
     {
       position: "Artist",
       social: "@alidoo_wolves",
       socialLink: "https://x.com/alidoo_wolves",
-      picture: artist,
+      picture: founder,
     },
     {
       position: "Head of Operations",
@@ -34,7 +34,7 @@ const Team = ({ sectionClass }: { sectionClass?: string }) => {
       className={`overflow-x-hidden xl:overflow-x-visible w-full container mx-auto px-4 xl:px-0 py-20 ${sectionClass}`}
     >
       <Rows className="text-center pb-20 justify-center">
-        <h2 className="text-6xl text-center">Team</h2>
+        <h2 className="text-6xl text-center">TEAM</h2>
       </Rows>
 
       <Rows className="grid grid-cols-1 md:grid-cols-3 md:flex-row gap-8">
@@ -48,14 +48,14 @@ const Team = ({ sectionClass }: { sectionClass?: string }) => {
               <Image
                 src={item.picture}
                 alt="Wolves Fun"
-                className="max-w-full border-[4px] border-black rounded-[50px]"
+                className="max-w-full border-[4px] border-black rounded-[0px]"
               />
               </Link>
             </motion.div>
 
-            <h3 className="text-4xl text-center">{item.position}</h3>
+            <h4 className="text-4xl text-center">{item.position}</h4>
             <Link href={item.socialLink} target="_blank">
-              <p className="text-2x text-center">{item.social}</p>
+              <p className="text-x text-center">{item.social}</p>
             </Link>
           </Rows>
         ))}

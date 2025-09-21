@@ -11,8 +11,8 @@ import {
 export function RoadMap() {
   const contentRoadMap = [
     {
-      title: "Phase 1",
-      titleText: "Call of the Wolves",
+      title: "PHASE 1",
+      titleText: "CALL OF THE WOLVES",
       description:
         "Laying the foundation for a thriving and engaged community.",
       list: [
@@ -74,7 +74,7 @@ export function RoadMap() {
   return (
     <div id="roadmap" className="w-full mt-32">
       <Rows className="justify-center pb-12">
-        <h2 className="text-6xl">Road Map</h2>
+        <h2 className="text-6xl">ROAD MAP</h2>
       </Rows>
 
       {contentRoadMap.map((item, index) => (

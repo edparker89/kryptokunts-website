@@ -58,7 +58,7 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
       className={`w-full container mx-auto px-4 xl:px-0 py-20 ${sectionClass}`}
     >
       <Rows className="justify-center mb-12">
-        <h2 className="text-6xl">FAQ</h2>
+        <h3 className="text-6xl">FAQ</h3>
       </Rows>
       <Rows className="flex-col gap-4">
         {faqContent.map((item, index) => (
@@ -72,13 +72,13 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
             key={index}
           >
             <Rows className="flex-col gap-3">
-              <h3
-                className={`text-2xl  ${
+              <h4
+                className={`text-4xl  ${
                   selectedQuestion === item.question ? "text-primaryColor" : ""
                 }`}
               >
                 {item.question}
-              </h3>
+              </h4>
               {selectedQuestion === item.question && <p dangerouslySetInnerHTML={{__html: item.answer}}></p>}
             </Rows>
         

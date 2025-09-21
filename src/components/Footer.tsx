@@ -21,9 +21,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full px-4 md:px-0 py-8 border-[4px] bg-[#C0D5FF] border-black">
+    <footer className="w-full px-4 md:px-0 py-8 border-[4px] bg-[#2F4F4F] border-black">
       <Rows className="flex-col md:flex-row justify-between gap-8 md:gap-0 items-center container mx-auto">
-        <h3 className="text-3xl">Whimsy Wolves</h3>
+        <h3 className="text-3xl">KRYPTOKUNTS</h3>
 
         <div className="flex flex-row gap-4 justify-center flex-wrap">
           {iconContent.map(({ icon, href }) => (
@@ -32,7 +32,7 @@ const Footer = () => {
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1 }}
-                className="cursor-pointer bg-primaryColor border-[3px] bg-[#E7EFFF] border-black rounded-full p-4"
+                className="cursor-pointer bg-primaryColor border-[3px] bg-[#000000] border-black rounded-full p-4"
               >
                 {/* <Image src={src} alt={alt} className="md:max-w-5 md:max-h-5 max-w-5 max-h-5" /> */}
                 <Icon icon={icon} width="24" height="24" />

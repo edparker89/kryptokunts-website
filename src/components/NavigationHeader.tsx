@@ -43,7 +43,7 @@ const NavigationHeader: React.FC<stateMenuProps> = ({
         <Button onClick={() => setIsMenuOpen(!isMenuOpen)}>Menu</Button>
         <Image src={logo} alt="Logo" width={70} height={70} className="rounded-full " />
         <Button
-          onClick={() => window.open("https://discord.gg/WYJzbqrY4A", "_blank")}
+          onClick={() => window.open("https://x.com/KryptoKunts", "_blank")}
           className="hidden md:block"
         >
           Join

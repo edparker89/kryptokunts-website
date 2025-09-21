@@ -27,19 +27,23 @@ import wolvesMatch1 from "@/assets/wolvesMatch1.jpeg";
 import wolvesMatch2 from "@/assets/wolvesMatch2.jpeg";
 import wolvesMatch3 from "@/assets/wolvesMatch3.jpeg";
 import wolvesMatch4 from "@/assets/wolvesMatch4.jpeg";
+import wolvesMatch5 from "@/assets/wolvesMatch5.jpeg";
 
 import artisityValues from "@/assets/artistryValue.png";
 import generosityValues from "@/assets/generosityValues.png";
 import innovationValues from "@/assets/innovationValues.png";
 
-import nft2 from "./nft-02.jpg";
-import nft3 from "./nft-03.jpg";
-import nft4 from "./nft-04.jpg";
-import nft5 from "./nft-05.jpg";
-import nft6 from "./nft-06.jpg";
-import nft7 from "./nft-07.jpg";
-
-import nft11 from "./nft-11.jpg";
+import nft1 from "./nft-01.jpeg";
+import nft2 from "./nft-02.jpeg";
+import nft3 from "./nft-03.jpeg";
+import nft4 from "./nft-04.jpeg";
+import nft5 from "./nft-05.jpeg";
+import nft6 from "./nft-06.jpeg";
+import nft7 from "./nft-07.jpeg";
+import nft8 from "./nft-08.jpeg";
+import nft9 from "./nft-09.jpeg";
+import nft10 from "./nft-10.jpeg";
+import nft11 from "./nft-11.jpeg";
 
 import nft13 from "./nft-13.jpeg";
 import nft14 from "./nft-14.jpeg";
@@ -83,6 +87,7 @@ export {
   wolvesMatch2,
   wolvesMatch3,
   wolvesMatch4,
+  wolvesMatch5,
   wolvesCharacter0,
   wolvesCharacter1,
   wolvesCharacter2,

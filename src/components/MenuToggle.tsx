@@ -19,23 +19,23 @@ const MenuToggle: React.FC<stateMenuProps> = ({
 }) => {
   const menuLink: Array<menuProps> = [
     {
-      title: "About",
+      title: "ABOUT",
       link: "#about",
     },
     {
-      title: "Gallery",
+      title: "GALLERY",
       link: "#nftgallery",
     },
     {
-      title: "Values",
+      title: "VALUES",
       link: "#values",
     },
     {
-      title: "Road Map",
+      title: "ROAD MAP",
       link: "#roadmap",
     },
     {
-      title: "Team",
+      title: "TEAM",
       link: "#team",
     },
     {
@@ -63,7 +63,7 @@ const MenuToggle: React.FC<stateMenuProps> = ({
       animate="visible"
       exit="hidden"
       variants={MenuToggleVariant}
-      className="w-full bg-[#C0D5FF] fixed top-0 z-[100000] rounded-b-3xl border-[6px] border-black px-14 py-14 md:py-28"
+      className="w-full bg-[#2F4F4F] fixed top-0 z-[100000] rounded-b-3xl border-[6px] border-black px-14 py-14 md:py-28"
     >
       {/* Text Menu & Close Button */}
       <div className="flex justify-between items-start">
@@ -78,7 +78,7 @@ const MenuToggle: React.FC<stateMenuProps> = ({
                   initial={{ scale: 1 }}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 1 }}
-                  className="text-black text-4xl md:text-[76px]"
+                  className="text-black text-4xl md:text-[40px]"
                 >
                   {menu.title}
                 </motion.h3>

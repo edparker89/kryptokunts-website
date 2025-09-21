@@ -43,7 +43,7 @@ export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
       className={`overflow-x-hidden xl:overflow-x-visible w-full container mx-auto px-4 xl:px-0 py-20 ${sectionClass}`}
     >
       <Rows className="justify-center">
-        <h2 className="text-6xl text-center">Core Values</h2>
+        <h2 className="text-6xl text-center">CORE VALUES</h2>
       </Rows>
 
       <Rows className="flex-col md:flex-row gap-8 pt-16">

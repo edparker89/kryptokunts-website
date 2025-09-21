@@ -7,7 +7,7 @@ import {
   wolvesCharacter2,
   wolvesCharacter3,
   wolvesCharacter4,
-  wolvesMatch1,
+  wolvesMatch5,
 } from "@/assets";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import MenuToggle from "./MenuToggle";
@@ -43,7 +43,7 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
 
   return (
     <section
-      style={{ backgroundImage: `url(${wolvesMatch1.src})` }}
+      style={{ backgroundImage: `url(${wolvesMatch5.src})` }}
       className="w-full h-[700px] md:h-[1000px] bg-no-repeat bg-cover bg-fixed relative overflow-x-hidden "
     >
       {/* layer blur */}
@@ -52,9 +52,9 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
       {/* Navigation Menus */}
       <NavigationHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
-      {/* Tittle */}
+      {/* Title */}
       <motion.h1
-        className="text-[50px] md:text-[100px] leading-[80px] md:leading-[140px] lg:text-[100px] xl:text-[180px] text-center strokeFams text-white mt-52 lg:mt-80 z-[10] relative"
+        className="text-[50px] md:text-[100px] leading-[80px] md:leading-[140px] lg:text-[100px] xl:text-[100px] text-center strokeFams text-white mt-52 lg:mt-80 z-[10] relative"
         initial={{ scale: 0.5 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
@@ -69,15 +69,11 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
         }}
       >
         <motion.span
-          variants={{ hidden: { scale: 0.5 }, visible: { scale: 1 } }}
+          variants={{ hidden: { scale: 0.3 }, visible: { scale: 0.5 } }}
         >
-          Whimsy
+          KRYPTOKUNTS
         </motion.span>
-        <motion.span
-          variants={{ hidden: { scale: 0.5 }, visible: { scale: 1 } }}
-        >
-          Wolves
-        </motion.span>
+
       </motion.h1>
 
       {/* The Wolves */}
@@ -86,7 +82,7 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
         className="flex gap-5 2xl:gap-52 flex-row w-full justify-center absolute bottom-0 "
       >
         <Image
-          src={wolvesCharacter0}
+          src={wolvesCharacter4}
           alt="Wolves"
           className="w-auto h-auto 2xl:scale-150 2xl:-translate-y-20"
         />

@@ -7,12 +7,12 @@ import {motion} from "motion/react";
 
 const About = ({sectionClass}: {sectionClass?: string}) => {
   const aboutContent = {
-    title: "Where Imagination Howls",
+    title: "JOIN THE HORDE",
     description:
-      "Step into the enchanting world of Whimsy Wolves, a family-friendly NFT project where imagination knows no bounds. Rooted in storytelling, art, and community, Whimsy Wolves brings lovable characters to life, inviting people of all ages to explore a magical forest of creativity and connection.<br/><br/>More than just digital collectibles, Whimsy Wolves celebrates the joy of artistic expression, generosity, and innovation. Each wolf has a unique story and talent, inspiring others to unleash their own creativity. Together, our pack builds a world where kindness, play, and imagination create unforgettable adventures. <br/> <br/> Join us as we bridge the digital and real worlds—creating experiences that spark joy, foster togetherness, and bring dreams to life.",
+      "<br/><br>🌍 2025 – The Year the World Glitched<br/><br>NFTs? Dead. Memes? Dumping. Bull run? Never showed.<br/><br>Then Mother Nature hit the blockchain harder than a rugpull. Decades of habitat destruction, climate chaos, and biodiversity loss opened the door for something far worse…<br/><br>A parasite. Unknown. Unstoppable. It spread faster than airdrops in a bull market. They called it the Kontagious Undead Neuro Toxin aka “KUNT” for short.<br/><br>🌆 Cities collapsed. 🌱 Ecosystems vanished. 🧟 Humanity… infected.<br/><br>But not all hope was lost. The survivors formed a mission: restore the planet, save the species, and cure the plague.<br/><br>Every forest regrown. Every wetland restored. Every species brought back — one hectare at a time — pushes back the undead.<br/><br>This is KryptoKunts: a post-apocalyptic PFP project where holders join the Horde for Good 🧟‍♂️.<br/><br>💚 10% of every mint funds real-world habitat restoration.<br/><br>Survive. Restore. Rebuild. Together.<br/><br>Mint your 'KUNT'. Heal the planet. End the outbreak.<br/><br>",
     image: {
       src: imageAbout,
-      alt: "Wolves Fun",
+      alt: "Bunch of KUNTS",
     },
   };
 
@@ -20,21 +20,21 @@ const About = ({sectionClass}: {sectionClass?: string}) => {
     <section id="about" className={`overflow-x-hidden xl:overflow-x-visible w-full container mx-auto px-4 lg:px-8 xl:px-0 py-20 ${sectionClass}`}>
       <Rows className=" justify-between gap-14 flex-col xl:flex-row">
         <div className="flex flex-col gap-4">
-          <h2 className="text-[52px] leading-[1] md:leading-normal">
+          <h2 className="text-[40px] leading-[1] md:leading-normal">
             {aboutContent.title}
           </h2>
 
           <p
             dangerouslySetInnerHTML={{ __html: aboutContent.description }}
-            className="text-[22px]"
+            className="text-[24px]"
           ></p>
 
-          <div className="py-8"><Button onClick={() => window.open("https://discord.gg/WYJzbqrY4A", "_blank")}>Join Community</Button></div>
+          <div className="py-8"><Button onClick={() => window.open("https://x.com/KryptoKunts", "_blank")}>Join Community</Button></div>
         </div>
 
         <motion.div
         whileHover={{ scale: 1.1 , rotate: 5}} 
-        className="xl:w-[3000px] max-w-[3000px] h-auto">
+        className="xl:w-[1000px] max-w-[1000px] h-auto">
         <Image
           src={aboutContent.image.src}
           alt={aboutContent.image.alt}
