@@ -15,7 +15,7 @@ import artist from "@/assets/artist.jpeg";
 import wolvesPlus1 from "@/assets/wolves-plus-1.svg";
 import wolvesPlus2 from "@/assets/wolves-plus-2.svg";
 import ogpImage from "@/assets/ogp.jpg";
-import dividerCandy from "@/assets/dividerCandy.svg"
+import dividerCandy from "@/assets/dividerCandy.svg";
 
 import kunt1 from "@/assets/kunt1.svg";
 import kunt2 from "@/assets/kunt2.svg";
@@ -90,7 +90,7 @@ export {
   kunt4,
   kunt5,
   ogpImage,
-  dividerCandy
+  dividerCandy,
 };
 
 export const nftGallery = [
