@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { wolvesCharacter0, wolvesCharacter1, wolvesCharacter2, wolvesCharacter3, wolvesCharacter4 } from "@/assets";
+import { kunt1, kunt2, kunt3, kunt4, kunt5 } from "@/assets";
 
 const ScrollingWolves = () => {
   // Scroll progress tracking
@@ -15,11 +15,11 @@ const ScrollingWolves = () => {
   const translateXWolf4 = useTransform(scrollY, [0, 500], ["180%", "-80%"]);
 
   const wolves = [
-    { src: wolvesCharacter0, x: translateXWolf0 },
-    { src: wolvesCharacter1, x: translateXWolf1 },
-    { src: wolvesCharacter2, x: translateXWolf2 },
-    { src: wolvesCharacter3, x: translateXWolf3 },
-    { src: wolvesCharacter4, x: translateXWolf4 },
+    { src: kunt1, x: translateXWolf0 },
+    { src: kunt2, x: translateXWolf1 },
+    { src: kunt3, x: translateXWolf2 },
+    { src: kunt4, x: translateXWolf3 },
+    { src: kunt5, x: translateXWolf4 },
   ];
 
   return (

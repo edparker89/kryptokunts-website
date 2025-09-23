@@ -2,12 +2,12 @@
 
 import NavigationHeader from "./NavigationHeader";
 import {
-  wolvesCharacter0,
-  wolvesCharacter1,
-  wolvesCharacter2,
-  wolvesCharacter3,
-  wolvesCharacter4,
-  wolvesMatch5,
+  kunt1,
+  kunt2,
+  kunt3,
+  kunt4,
+  kunt5,
+  KK_header,
 } from "@/assets";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import MenuToggle from "./MenuToggle";
@@ -43,7 +43,7 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
 
   return (
     <section
-      style={{ backgroundImage: `url(${wolvesMatch5.src})` }}
+      style={{ backgroundImage: `url(${KK_header.src})` }}
       className="w-full h-[700px] md:h-[1000px] bg-no-repeat bg-cover bg-fixed relative overflow-x-hidden "
     >
       {/* layer blur */}
@@ -76,40 +76,21 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
 
       </motion.h1>
 
-      {/* The Wolves */}
+      {/* The KUNTS */}
       <motion.div
         style={{ x: SmoothY }}
-        className="flex gap-5 2xl:gap-52 flex-row w-full justify-center absolute bottom-0 "
+        className="flex gap-5 2xl:gap-52 flex-row w-full justify-center absolute bottom-0"
       >
-        <Image
-          src={wolvesCharacter4}
-          alt="Wolves"
-          className="w-auto h-auto 2xl:scale-150 2xl:-translate-y-20"
-        />
-
-        <Image
-          src={wolvesCharacter1}
-          alt="Wolves"
-          className="w-auto h-auto 2xl:scale-150 2xl:-translate-y-20"
-        />
-
-        <Image
-          src={wolvesCharacter2}
-          alt="Wolves"
-          className="w-auto h-auto 2xl:scale-150 2xl:-translate-y-20"
-        />
-
-        <Image
-          src={wolvesCharacter3}
-          alt="Wolves"
-          className="w-auto h-auto 2xl:scale-150 2xl:-translate-y-20"
-        />
-
-        <Image
-          src={wolvesCharacter4}
-          alt="Wolves"
-          className="w-auto h-auto 2xl:scale-150 2xl:-translate-y-20"
-        />
+        {[kunt1, kunt2, kunt3, kunt4, kunt5].map((img, i) => (
+      <Image
+        key={i}
+        src={img}
+        alt={`NFT ${i + 1}`}
+        width={3000}
+        height={3000}
+        className="h-40 w-auto sm:h-52 md:h-64 lg:h-72 xl:h-80 2xl:h-96"
+      />
+      ))}
       </motion.div>
 
       {/* Menu Clicked */}

@@ -2,10 +2,10 @@ import React from "react";
 import Rows from "./Rows";
 import Image from "next/image";
 import {
-  wolvesMatch1,
-  wolvesMatch2,
-  wolvesMatch3,
-  wolvesMatch4,
+  Roadmap1,
+  Roadmap2,
+  Roadmap3,
+  Roadmap4,
 } from "@/assets";
 
 export function RoadMap() {
@@ -21,11 +21,11 @@ export function RoadMap() {
         "Community Engagement: Organize events, giveaways, and activities to strengthen bonds within the Whimsy Wolves community.",
         "NFT Mint Event: Celebrate the official minting of Whimsy Wolves.",
       ],
-      bgImage: wolvesMatch1,
+      bgImage: Roadmap1,
     },
 
     {
-      title: "Phase 2",
+      title: "PHASE 2",
       titleText: "Heart of the Wolves",
       description:
         "Building deep emotional connections through our unique storytelling and brand.",
@@ -35,10 +35,10 @@ export function RoadMap() {
         "Merchandise and Collectibles: Introduce physical and digital products to bring the Whimsy Wolves experience to life.",
         "Collaborative Expansion: Partner with creators, influencers, and brands to amplify our reach and message.",
       ],
-      bgImage: wolvesMatch2,
+      bgImage: Roadmap2,
     },
     {
-      title: "Phase 3",
+      title: "PHASE 3",
       titleText: "Legacy of the Wolves",
       description: "Expanding the Whimsy World.",
       list: [
@@ -47,7 +47,7 @@ export function RoadMap() {
         "Interactive Entertainment: Launch immersive experiences like blockchain-based mini-games, collaborative storytelling campaigns, and real-time events that allow holders to shape the Whimsy Wolves world.",
         "Community-Driven Content: Empower the community to co-create content or influence story arcs leveraging the blockchain.",
       ],
-      bgImage: wolvesMatch3,
+      bgImage: Roadmap3,
     },
   ];
 
@@ -107,7 +107,7 @@ export function RoadMap() {
       ))}
 
       <Rows className="w-full">
-        <Image src={wolvesMatch4} alt="Wolves Fun" className="w-full h-auto " />
+        <Image src={Roadmap4} alt="Wolves Fun" className="w-full h-auto " />
       </Rows>
     </div>
   );

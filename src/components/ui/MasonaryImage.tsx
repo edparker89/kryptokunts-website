@@ -31,8 +31,8 @@ export const ParallaxScroll = ({
 
   return (
     <>
-      <div id="nftgallery" className="text-6xl py-8">
-       <h2 className="text-center">The Gallery</h2> 
+      <div id="nftgallery" className="text-6xl py-8 mb-8">
+       <h2 className="text-center">THE GALLERY</h2> 
       </div>
       <section 
         className={cn(

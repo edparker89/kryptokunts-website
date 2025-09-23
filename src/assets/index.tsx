@@ -3,7 +3,7 @@ import logo from "./logoWolves.png";
 import wolvesCenter from "./wolves-center.webp";
 import wolvesLeft from "./wolves-left.svg";
 import wolvesRight from "./wolves-right.svg";
-import imageAbout from "./whimsywolves-1.png";
+import about from "./about.png";
 import dexIcon from "@/assets/dexicon.png";
 import coingeckoIcon from "@/assets/coingeckoBL.png";
 import dexToolIcon from "@/assets/dextoolicon.png";
@@ -17,51 +17,51 @@ import wolvesPlus2 from "@/assets/wolves-plus-2.svg";
 import ogpImage from "@/assets/ogp.jpg";
 import dividerCandy from "@/assets/dividerCandy.svg"
 
-import wolvesCharacter0 from "@/assets/wolvesCharacter0.svg";
-import wolvesCharacter1 from "@/assets/wolvesCharacter1.svg";
-import wolvesCharacter2 from "@/assets/wolvesCharacter2.svg";
-import wolvesCharacter3 from "@/assets/wolvesCharacter3.svg";
-import wolvesCharacter4 from "@/assets/wolvesCharacter4.svg";
+import kunt1 from "@/assets/kunt1.svg";
+import kunt2 from "@/assets/kunt2.svg";
+import kunt3 from "@/assets/kunt3.svg";
+import kunt4 from "@/assets/kunt4.svg";
+import kunt5 from "@/assets/kunt5.svg";
 
-import wolvesMatch1 from "@/assets/wolvesMatch1.jpeg";
-import wolvesMatch2 from "@/assets/wolvesMatch2.jpeg";
-import wolvesMatch3 from "@/assets/wolvesMatch3.jpeg";
-import wolvesMatch4 from "@/assets/wolvesMatch4.jpeg";
-import wolvesMatch5 from "@/assets/wolvesMatch5.jpeg";
+import Roadmap1 from "@/assets/Roadmap1.jpeg";
+import Roadmap2 from "@/assets/Roadmap2.jpeg";
+import Roadmap3 from "@/assets/Roadmap3.jpeg";
+import Roadmap4 from "@/assets/Roadmap4.jpeg";
+import KK_header from "@/assets/KK_header.jpeg";
 
 import artisityValues from "@/assets/artistryValue.png";
 import generosityValues from "@/assets/generosityValues.png";
 import innovationValues from "@/assets/innovationValues.png";
 
-import nft1 from "./nft-01.jpeg";
-import nft2 from "./nft-02.jpeg";
-import nft3 from "./nft-03.jpeg";
-import nft4 from "./nft-04.jpeg";
-import nft5 from "./nft-05.jpeg";
-import nft6 from "./nft-06.jpeg";
-import nft7 from "./nft-07.jpeg";
-import nft8 from "./nft-08.jpeg";
-import nft9 from "./nft-09.jpeg";
-import nft10 from "./nft-10.jpeg";
-import nft11 from "./nft-11.jpeg";
+import nft1 from "./1.jpeg";
+import nft2 from "./2.jpeg";
+import nft3 from "./3.jpeg";
+import nft4 from "./4.jpeg";
+import nft5 from "./5.jpeg";
+import nft6 from "./6.jpeg";
+import nft7 from "./7.jpeg";
+import nft8 from "./8.jpeg";
+import nft9 from "./9.jpeg";
+import nft10 from "./10.jpeg";
+import nft11 from "./11.jpeg";
 
-import nft13 from "./nft-13.jpeg";
-import nft14 from "./nft-14.jpeg";
-import nft15 from "./nft-15.jpeg";
-import nft16 from "./nft-16.jpeg";
-import nft17 from "./nft-17.jpeg";
-import nft18 from "./nft-18.jpeg";
-import nft19 from "./nft-19.jpeg";
-import nft20 from "./nft-20.jpeg";
-import nft21 from "./nft-21.jpeg";
-import nft22 from "./nft-22.jpeg";
-import nft23 from "./nft-23.jpeg";
-import nft24 from "./nft-24.jpeg";
-import nft25 from "./nft-25.jpeg";
-import nft26 from "./nft-26.jpeg";
-import nft27 from "./nft-27.jpeg";
-import nft28 from "./nft-28.jpeg";
-import nft29 from "./nft-29.jpeg";
+import nft13 from "./13.jpeg";
+import nft14 from "./14.jpeg";
+import nft15 from "./15.jpeg";
+import nft16 from "./16.jpeg";
+import nft17 from "./17.jpeg";
+import nft18 from "./18.jpeg";
+import nft19 from "./19.jpeg";
+import nft20 from "./20.jpeg";
+import nft21 from "./21.jpeg";
+import nft22 from "./22.jpeg";
+import nft23 from "./23.jpeg";
+import nft24 from "./24.jpeg";
+import nft25 from "./25.jpeg";
+import nft26 from "./26.jpeg";
+import nft27 from "./27.jpeg";
+import nft28 from "./28.jpeg";
+import nft29 from "./29.jpeg";
 
 export {
   bgHero,
@@ -69,7 +69,7 @@ export {
   wolvesCenter,
   wolvesLeft,
   wolvesRight,
-  imageAbout,
+  about,
   dexIcon,
   coingeckoIcon,
   dexToolIcon,
@@ -83,16 +83,16 @@ export {
   innovationValues,
   wolvesPlus1,
   wolvesPlus2,
-  wolvesMatch1,
-  wolvesMatch2,
-  wolvesMatch3,
-  wolvesMatch4,
-  wolvesMatch5,
-  wolvesCharacter0,
-  wolvesCharacter1,
-  wolvesCharacter2,
-  wolvesCharacter3,
-  wolvesCharacter4,
+  Roadmap1,
+  Roadmap2,
+  Roadmap3,
+  Roadmap4,
+  KK_header,
+  kunt1,
+  kunt2,
+  kunt3,
+  kunt4,
+  kunt5,
   ogpImage,
   dividerCandy
 };
