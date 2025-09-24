@@ -15,7 +15,7 @@ import artist from "@/assets/artist.jpeg";
 import wolvesPlus1 from "@/assets/wolves-plus-1.svg";
 import wolvesPlus2 from "@/assets/wolves-plus-2.svg";
 import ogpImage from "@/assets/ogp.jpg";
-import dividerCandy from "@/assets/dividerCandy.svg";
+import dividerCandy from "@/assets/dividerCandy.svg"
 
 import kunt1 from "@/assets/kunt1.svg";
 import kunt2 from "@/assets/kunt2.svg";
@@ -33,12 +33,16 @@ import artisityValues from "@/assets/artistryValue.png";
 import generosityValues from "@/assets/generosityValues.png";
 import innovationValues from "@/assets/innovationValues.png";
 
+import nft1 from "./1.jpeg";
 import nft2 from "./2.jpeg";
 import nft3 from "./3.jpeg";
 import nft4 from "./4.jpeg";
 import nft5 from "./5.jpeg";
 import nft6 from "./6.jpeg";
 import nft7 from "./7.jpeg";
+import nft8 from "./8.jpeg";
+import nft9 from "./9.jpeg";
+import nft10 from "./10.jpeg";
 import nft11 from "./11.jpeg";
 
 import nft13 from "./13.jpeg";
@@ -90,7 +94,7 @@ export {
   kunt4,
   kunt5,
   ogpImage,
-  dividerCandy,
+  dividerCandy
 };
 
 export const nftGallery = [

@@ -27,10 +27,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Disable Next.js Image Optimization for static exports
   },
-  eslint: {
-    // ⚡ Ignore ESLint errors during builds
-    ignoreDuringBuilds: true,
-  },
+  /* config options here */
 };
 
 export default nextConfig;
+
+
