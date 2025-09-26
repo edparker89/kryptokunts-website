@@ -1,5 +1,5 @@
 import bgHero from "./bg-hero.jpg";
-import logo from "./logoWolves.png";
+import logo from "./logoKK.png";
 import wolvesCenter from "./wolves-center.webp";
 import wolvesLeft from "./wolves-left.svg";
 import wolvesRight from "./wolves-right.svg";
@@ -29,9 +29,9 @@ import Roadmap3 from "@/assets/Roadmap3.jpeg";
 import Roadmap4 from "@/assets/Roadmap4.jpeg";
 import KK_header from "@/assets/KK_header.jpeg";
 
-import artisityValues from "@/assets/artistryValue.png";
-import generosityValues from "@/assets/generosityValues.png";
-import innovationValues from "@/assets/innovationValues.png";
+import community from "@/assets/community.png";
+import education from "@/assets/education.png";
+import sustainability from "@/assets/sustainability.png";
 
 import nft2 from "./2.jpeg";
 import nft3 from "./3.jpeg";
@@ -74,9 +74,9 @@ export {
   headOfCollabs,
   founder,
   artist,
-  artisityValues,
-  generosityValues,
-  innovationValues,
+  community,
+  education,
+  sustainability,
   wolvesPlus1,
   wolvesPlus2,
   Roadmap1,

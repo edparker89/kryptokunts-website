@@ -41,9 +41,10 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
         "Whimsy Wolves roadmap strategy centers on building strong Intellectual Property, starting with a focus on short-form media to quickly capture attention and engage our audience. From there, we’ll bridge into tangible real-world engagements, such as merchandise and partnerships, to solidify the brand’s presence and deepen its connection with the public. IP is the cornerstone of Whimsy Wolves, and every step we take is designed to strengthen and expand its recognition and value.",
     },
     {
-        question: "What is Whimsy Wolves' Intellectual Property Policy?",
-        answer: "Whimsy Wolves grants full ownership of the purchased non-fungible token and its associated artwork to the buyer, managed through the Ethereum blockchain. Owners are allowed personal and commercial use of the artwork, including displaying it on verified marketplaces and third-party websites. Additionally, owners can create and sell derivative works for commercial purposes. However, modifications, use in hate speech or unauthorized commercial products, and attempts to trademark or acquire additional IP rights for the artwork are prohibited. Furthermore, holders of the non-fungible tokens are not permitted to use the artwork to represent Whimsy Wolves or use the Whimsy Wolves trademark in any manner."
-    }
+      question: "What is Whimsy Wolves' Intellectual Property Policy?",
+      answer:
+        "Whimsy Wolves grants full ownership of the purchased non-fungible token and its associated artwork to the buyer, managed through the Ethereum blockchain. Owners are allowed personal and commercial use of the artwork, including displaying it on verified marketplaces and third-party websites. Additionally, owners can create and sell derivative works for commercial purposes. However, modifications, use in hate speech or unauthorized commercial products, and attempts to trademark or acquire additional IP rights for the artwork are prohibited. Furthermore, holders of the non-fungible tokens are not permitted to use the artwork to represent Whimsy Wolves or use the Whimsy Wolves trademark in any manner.",
+    },
   ];
 
   const [selectedQuestion, setSelectedQuestion] = useState<string | null>(null);
@@ -55,33 +56,49 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
   return (
     <section
       id="faq"
-      className={`w-full container mx-auto px-4 xl:px-0 py-20 ${sectionClass}`}
+      className={`w-full container mx-auto px-4 xl:px-0 py-10 ${sectionClass}`}
     >
+      {/* Glowing Title */}
       <Rows className="justify-center mb-12">
-        <h3 className="text-6xl">FAQ</h3>
+        <h3
+          className="text-6xl text-center text-white font-bold uppercase"
+          style={{
+            textShadow:
+              "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
+          }}
+        >
+          FAQ
+        </h3>
       </Rows>
+
+      {/* Questions */}
       <Rows className="flex-col gap-4">
         {faqContent.map((item, index) => (
           <Rows
             onClick={() => handleQuestionClick(item.question)}
             className={`justify-between ${
-              selectedQuestion === item.question
-                ? "items-start"
-                : "items-center"
+              selectedQuestion === item.question ? "items-start" : "items-center"
             } border-[3px] border-black p-8 rounded-lg cursor-pointer hover:bg-gray-400/10`}
             key={index}
           >
             <Rows className="flex-col gap-3">
               <h4
-                className={`text-4xl  ${
-                  selectedQuestion === item.question ? "text-primaryColor" : ""
+                className={`text-4xl text-white ${
+                  selectedQuestion === item.question
+                    ? "text-[#b7c8a3]"
+                    : ""
                 }`}
               >
                 {item.question}
               </h4>
-              {selectedQuestion === item.question && <p dangerouslySetInnerHTML={{__html: item.answer}}></p>}
+              {selectedQuestion === item.question && (
+                <p
+                  dangerouslySetInnerHTML={{ __html: item.answer }}
+                  className="text-white/90"
+                ></p>
+              )}
             </Rows>
-        
+
             <Rows>
               {selectedQuestion === item.question ? (
                 <Icon icon="mdi:minus" width="40" height="40" />

@@ -32,8 +32,17 @@ export const ParallaxScroll = ({
   return (
     <>
       <div id="nftgallery" className="text-6xl py-8 mb-8">
-       <h2 className="text-center">THE GALLERY</h2> 
+        <h2
+          className="text-center text-white font-bold uppercase"
+          style={{
+            textShadow:
+              "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
+          }}
+        >
+          THE GALLERY
+        </h2>
       </div>
+
       <section 
         className={cn(
           "h-[50rem]  items-start overflow-y-auto w-full hidden md:block ",

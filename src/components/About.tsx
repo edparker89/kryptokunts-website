@@ -34,9 +34,16 @@ const About = ({ sectionClass }: { sectionClass?: string }) => {
 
         {/* Left: Text */}
         <div className="flex flex-col gap-4 xl:w-1/2">
-          <h2 className="text-[40px] leading-[1] md:leading-normal">
-            {aboutContent.title}
-          </h2>
+          <h2
+          className="text-[40px] leading-[1] md:leading-normal font-bold uppercase text-white"
+          style={{
+            textShadow:
+              "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
+          }}
+        >
+          {aboutContent.title}
+        </h2>
+
 
           <p
             dangerouslySetInnerHTML={{ __html: aboutContent.description }}

@@ -23,7 +23,6 @@ export function RoadMap() {
       ],
       bgImage: Roadmap1,
     },
-
     {
       title: "PHASE 2",
       titleText: "Heart of the Wolves",
@@ -51,49 +50,55 @@ export function RoadMap() {
     },
   ];
 
-  // const data = contentTimeLine.map((item) => ({
-  //   title: item.title,
-  //   content: (
-  //     <div id="roadmap" className="flex flex-col gap-4">
-  //       <h2 className="text-[40px]">{item.titleText}</h2>
-  //       <p className="text-[20px]">
-  //         <b>{item.description}</b>
-  //       </p>
-
-  //       <p className="text-[18px]">
-  //       <ul className="flex flex-col gap-3">
-  //           {item.list.map((listItem, index) => (
-  //             <li dangerouslySetInnerHTML={{ __html: listItem }} key={index}></li>
-  //           ))}
-  //         </ul>
-  //       </p>
-  //     </div>
-  //   ),
-  // }));
-
   return (
     <div id="roadmap" className="w-full mt-32">
+      {/* Section Title */}
       <Rows className="justify-center pb-12">
-        <h2 className="text-6xl">ROAD MAP</h2>
+        <h2
+          className="text-6xl text-center text-white font-bold uppercase"
+          style={{
+            textShadow:
+              "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
+          }}
+        >
+          ROAD MAP
+        </h2>
       </Rows>
 
+      {/* Phases 1–3 */}
       {contentRoadMap.map((item, index) => (
         <Rows className="flex-col pt-4 pb-2" key={index}>
           <Rows className="w-full">
             <Image
               src={item.bgImage}
-              alt="Wolves Fun"
-              className="w-full h-auto "
+              alt="Roadmap"
+              className="w-full h-auto"
             />
           </Rows>
-          ``
-          <Rows className="flex-col lg:flex-row justify-between container mx-auto py-12 px-4 xl:px-0">
-            <h3 className="text-5xl">{item.title}</h3>
 
+          {/* Phase Content */}
+          <Rows className="flex-col lg:flex-row items-center lg:items-stretch justify-between container mx-auto py-12 px-4 xl:px-0 gap-8">
+            
+            {/* Phase Title - glowing + middle-left */}
+            <div className="flex lg:items-center lg:justify-start min-w-[180px]">
+              <h3
+                className="text-5xl text-white font-bold uppercase"
+                style={{
+                  textShadow:
+                    "0 0 10px #698362aa, 0 0 20px #69836288, 0 0 30px #698362cc",
+                }}
+              >
+                {item.title}
+              </h3>
+            </div>
+
+            {/* Content */}
             <Rows className="flex-col gap-4 max-w-[700px]">
-              <h4 className="text-4xl">{item.titleText}</h4>
-              <p className="text-lg font-bold">{item.description}</p>
-              <ul className="flex flex-col gap-3">
+              <h4 className="text-4xl text-white">{item.titleText}</h4>
+              <p className="text-lg font-bold text-white/90">
+                {item.description}
+              </p>
+              <ul className="flex flex-col gap-3 text-white/80">
                 {item.list.map((listItem, index) => (
                   <li
                     dangerouslySetInnerHTML={{ __html: listItem }}
@@ -106,8 +111,9 @@ export function RoadMap() {
         </Rows>
       ))}
 
+      {/* Phase 4 image */}
       <Rows className="w-full">
-        <Image src={Roadmap4} alt="Wolves Fun" className="w-full h-auto " />
+        <Image src={Roadmap4} alt="Roadmap" className="w-full h-auto" />
       </Rows>
     </div>
   );

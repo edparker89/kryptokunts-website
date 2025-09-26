@@ -40,7 +40,10 @@ const NavigationHeader: React.FC<stateMenuProps> = ({
       } transition-top duration-300 fixed w-full bg-transparent  z-[10000000] ${isMenuOpen ? 'hidden' : ''}`}
     >
       <div className="flex flex-row-reverse md:flex-row justify-between items-center container mx-auto py-4 relative px-4 md:px-4 lg:px-4">
-        <Button onClick={() => setIsMenuOpen(!isMenuOpen)}>Menu</Button>
+        <Button onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          Menu
+        </Button>
         <Image src={logo} alt="Logo" width={70} height={70} className="rounded-full " />
         <Button
           onClick={() => window.open("https://x.com/KryptoKunts", "_blank")}
