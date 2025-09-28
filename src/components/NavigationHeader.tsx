@@ -46,10 +46,10 @@ const NavigationHeader: React.FC<stateMenuProps> = ({
         </Button>
         <Image src={logo} alt="Logo" width={70} height={70} className="rounded-full " />
         <Button
-          onClick={() => window.open("https://x.com/KryptoKunts", "_blank")}
+          onClick={() => window.open("https://kryptokunts-mint-ui.vercel.app/", "_blank")}
           className="hidden md:block"
         >
-          Join
+          Mint
         </Button>
       </div>
     </div>

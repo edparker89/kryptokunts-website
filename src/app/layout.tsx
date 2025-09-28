@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "KryptoKunts - NFT Collection",
     description:
       "1,111 degens infected with the Kontagious (so-called due to an admin error) Undead Neuro Toxin.",
-    url: "https://whimsywolves.com/",
+    url: "https://kryptokunts.com/",
     type: "website",
     images: [
       {
