@@ -12,38 +12,28 @@ interface faqProps {
 export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
   const faqContent: Array<faqProps> = [
     {
-      question: "What is Whimsy Wolves?",
+      question: "What is KryptoKunts?",
       answer:
-        "Whimsy Wolves is a captivating collection of 7,777 digital wolves on the blockchain.",
+        "KryptoKunts is a collection of 1,111 unique zombie-themed NFTs. We blend dark humour, art, and environmental impact — hoping to prevent the impending apocalypse by donating a portion of mint proceeds to real-world habitat restoration 🧟‍♂️ 🌱",
     },
     {
-      question: "What blockchain is Whimsy Wolves on?",
-      answer: "Whimsy Wolves will be living on the Ethereum blockchain. ",
+      question: "What blockchain is KryptoKunts on?",
+      answer: "KryptoKunts lives on the Solana blockchain — chosen for its speed, low fees, and eco-friendly design. Unlike energy-heavy networks, Solana runs efficiently and uses a fraction of the power of traditional blockchains, aligning perfectly with our mission to support real-world conservation and sustainability 🌿⚡",
     },
     {
-      question: "What is the Mission of Whimsy Wolves?",
+      question: "What is the Mission of KryptoKunts",
       answer:
-        "Whimsy Wolves is a family-friendly, creative, and innovative project designed to bring joy, connection, and imagination to people of all ages. <br/><br/> Our mission is to build a beloved brand that connects people through storytelling, art, and community engagement, creating meaningful experiences that resonate in everyday life, guided by our core values: Artistry, Generosity, and Innovation. ",
+        "Our mission is to bridge digital art with real-world impact. KryptoKunts uses zombie-themed NFTs to raise awareness of the apocalyptic impact human activity is having on the planet, and to fund IRL habitat restoration as a result. By donating 10% of mint proceeds to conservation projects, we're turning degen energy into something that gives life back to the planet 🌍💚",
     },
     {
-      question: "What is the Whimsy Wolves about?",
+      question: "How can I join the KryptoKunts whitelist?",
       answer:
-        "Our primary focus is on providing a family-friendly space where creativity, imagination, and joy thrive. Whimsy Wolves is designed to be a safe and enjoyable experience for users of all ages, ensuring that families, artists, collectors and enthusiasts can explore, play, and connect in a wholesome online environment.",
+        "You can join the whitelist by getting involved with the community — follow us on X, join the Horde on Discord (Disc-Horde...?), take part in raids, and look out for special WL giveaways. Active, supportive undead degens always rise to the top 🧟‍♂️🔥",
     },
     {
-      question: "How do I participate in the Whimsy Wolves pre-sale?",
+      question: "What is KryptoKunts' Intellectual Property Policy?",
       answer:
-        "If you would like to participate in the pre-sale, you must be on the Whimsylist and there are several opportunities to participate. Follow our social media accounts and join our Discord server. We will have announcements for raffle events and social media engagement campaigns. For specific details head over to Medium for more information.",
-    },
-    {
-      question: "What is Whimsy Wolves roadmap?",
-      answer:
-        "Whimsy Wolves roadmap strategy centers on building strong Intellectual Property, starting with a focus on short-form media to quickly capture attention and engage our audience. From there, we’ll bridge into tangible real-world engagements, such as merchandise and partnerships, to solidify the brand’s presence and deepen its connection with the public. IP is the cornerstone of Whimsy Wolves, and every step we take is designed to strengthen and expand its recognition and value.",
-    },
-    {
-      question: "What is Whimsy Wolves' Intellectual Property Policy?",
-      answer:
-        "Whimsy Wolves grants full ownership of the purchased non-fungible token and its associated artwork to the buyer, managed through the Ethereum blockchain. Owners are allowed personal and commercial use of the artwork, including displaying it on verified marketplaces and third-party websites. Additionally, owners can create and sell derivative works for commercial purposes. However, modifications, use in hate speech or unauthorized commercial products, and attempts to trademark or acquire additional IP rights for the artwork are prohibited. Furthermore, holders of the non-fungible tokens are not permitted to use the artwork to represent Whimsy Wolves or use the Whimsy Wolves trademark in any manner.",
+        "KryptoKunts grants full ownership of the purchased non-fungible token and its associated artwork to the buyer, managed through the Solana blockchain. Owners are allowed personal and commercial use of the artwork, including displaying it on verified marketplaces and third-party websites. Additionally, owners can create and sell derivative works for commercial purposes. However, modifications, use in hate speech or unauthorized commercial products, and attempts to trademark or acquire additional IP rights for the artwork, are prohibited. Furthermore, holders of the non-fungible tokens are not permitted to use the artwork to represent KryptoKunts or use the KryptoKunts trademark in any manner.",
     },
   ];
 
@@ -94,7 +84,7 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
               {selectedQuestion === item.question && (
                 <p
                   dangerouslySetInnerHTML={{ __html: item.answer }}
-                  className="text-white/90"
+                  className="text-white/90 text-xl leading-relaxed"
                 ></p>
               )}
             </Rows>

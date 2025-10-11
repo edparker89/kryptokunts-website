@@ -10,8 +10,8 @@ const About = ({ sectionClass }: { sectionClass?: string }) => {
   const aboutContent = {
     title: "JOIN THE HORDE",
     description:
-      "<br/><br>🌍 2025 – The Year the World Glitched<br/><br>NFTs? Dead. Memes? Dumping. Bull run? Never showed.<br/><br>Then Mother Nature hit the blockchain harder than a rugpull. Decades of habitat destruction, climate chaos, and biodiversity loss opened the door for something far worse…<br/><br>A parasite. Unknown. Unstoppable. It spread faster than airdrops in a bull market. They called it the Kontagious Undead Neuro Toxin aka “KUNT” for short.<br/><br>🌆 Cities collapsed. 🌱 Ecosystems vanished. 🧟 Humanity… infected.<br/><br>But not all hope was lost. The survivors formed a mission: restore the planet, save the species, and cure the plague.<br/><br>Every forest regrown. Every wetland restored. Every species brought back — one hectare at a time — pushes back the undead.<br/><br>This is KryptoKunts: a post-apocalyptic PFP project where holders join the Horde for Good 🧟‍♂️.<br/><br>💚 10% of every mint funds real-world habitat restoration.<br/><br>Survive. Restore. Rebuild. Together.<br/><br>Mint your 'KUNT'. Heal the planet. End the outbreak.<br/><br>",
-    image: {
+      "<br/><br>🌍 2025 – The Year the World Glitched<br/><br>NFTs were dead 💀. Memes were dumping 📉. The bull run never came ⏳.<br/><br>Then Mother Nature hit the blockchain harder than a rugpull. Decades of habitat destruction, climate chaos, and biodiversity loss opened the door for something far worse…<br/><br>A parasite 🦠. Unknown. Unstoppable. It spread faster than airdrops in a bull market. Known as the Kuntagious (so-called due to an admin error) Undead Neuro Toxin (aka “KUNT”).<br/><br>🌆 Cities collapsed. 🌱 Ecosystems vanished. 🧟 Humanity… infected.<br/><br>But not all hope was lost. The survivors formed a mission: restore the planet, save the species, and cure the plague.<br/><br>Every forest regrown. Every wetland restored. Every species brought back. Restoring natural habitats was the one way to push back the undead.<br/><br>This is KryptoKunts: a post-apocalyptic PFP project where holders join the Horde for Good 🧟‍♂️.<br/><br>💚 10% of every mint funds real-world habitat restoration.<br/><br>Survive. Restore. Rebuild. Together.<br/><br>Mint your 'KUNT'. Heal the planet. End the outbreak.<br/><br>",
+      image: {
       src: about,
       alt: "Bunch of KUNTS",
     },
@@ -52,7 +52,7 @@ const About = ({ sectionClass }: { sectionClass?: string }) => {
 
           <div className="py-8">
             <Button
-              onClick={() => window.open("https://x.com/KryptoKunts", "_blank")}
+              onClick={() => window.open("https://discord.gg/56z9V3B5", "_blank")}
             >
               Join Community
             </Button>

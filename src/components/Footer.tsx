@@ -7,7 +7,7 @@ const Footer = () => {
   const iconContent = [
     {
       icon: "ic:outline-discord",
-      href: "https://discord.gg/WYJzbqrY4A",
+      href: "https://discord.gg/56z9V3B5",
     },
     {
       icon: "line-md:twitter-x",
