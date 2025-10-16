@@ -3,12 +3,12 @@ import React from "react";
 import Rows from "./Rows";
 import { community, education, sustainability } from "@/assets";
 import { motion } from "motion/react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 interface TestimonialProps {
   quote: string;
   name: string;
-  src: any;
+  src: string | StaticImageData;
 }
 
 export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
