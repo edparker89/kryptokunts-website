@@ -107,10 +107,10 @@ export function RoadMap() {
             {/* Content */}
             <Rows className="flex-col gap-4 max-w-[700px]">
               <h4 className="text-4xl text-white">{item.titleText}</h4>
-              <p className="text-lg font-bold text-white/90">
+              <p className="text-xl font-bold text-white/90">
                 {item.description}
               </p>
-              <ul className="flex flex-col gap-3 text-white/80">
+              <ul className="text-xl flex flex-col gap-3 text-white/80">
                 {item.list.map((listItem, index) => (
                   <li
                     dangerouslySetInnerHTML={{ __html: listItem }}

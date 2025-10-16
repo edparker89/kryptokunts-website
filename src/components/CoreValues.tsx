@@ -85,7 +85,7 @@ export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
             </div>
             <h3 className="text-3xl pt-6 pb-6">{item.name}</h3>
             <p
-              className="text-white text-[16px] leading-relaxed"
+              className="text-white text-[20px] leading-relaxed"
               dangerouslySetInnerHTML={{ __html: item.quote }}
             />
           </Rows>
