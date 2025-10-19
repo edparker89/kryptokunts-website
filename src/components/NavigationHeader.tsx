@@ -46,7 +46,7 @@ const NavigationHeader: React.FC<stateMenuProps> = ({
         </Button>
         <Image src={logo} alt="Logo" width={70} height={70} className="rounded-full " />
         <Button
-          onClick={() => window.open("https://kryptokunts-mint-ui.vercel.app/", "_blank")}
+          onClick={() => window.open("https://mint.kryptokunts.com/", "_blank")}
           className="hidden md:block"
         >
           Mint
