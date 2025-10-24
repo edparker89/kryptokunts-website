@@ -25,21 +25,24 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
   return (
     <section
       style={{ backgroundImage: `url(${KK_header.src})` }}
-      className="relative w-[100vw] max-w-[100vw] min-h-[70vh] sm:min-h-[80vh] md:min-h-[100vh]
-      bg-no-repeat bg-cover bg-center overflow-hidden overflow-x-hidden"
+      className="relative w-screen max-w-[100vw] min-h-[70vh] sm:min-h-[80vh] md:min-h-[100vh]
+      bg-no-repeat bg-cover bg-center overflow-hidden"
     >
-      {/* Overlay (for better contrast) */}
+      {/* Overlay for contrast */}
       <div className="absolute inset-0 bg-black/40 z-[1]" />
 
-      {/* Navigation (pinned at top, always visible) */}
+      {/* Navigation (always visible) */}
       <div className="fixed top-0 left-0 w-full z-[50]">
-        <NavigationHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <NavigationHeader
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+        />
       </div>
 
       {/* Title */}
       <motion.h1
         className="relative z-[2] text-center text-white font-bold 
-        text-[clamp(2rem,8vw,5.5rem)] leading-tight mt-40 sm:mt-48 md:mt-64 
+        text-[clamp(1.75rem,6vw,4.5rem)] leading-tight mt-40 sm:mt-48 md:mt-64 
         drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)] px-4"
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -48,10 +51,11 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
         KRYPTOKUNTS
       </motion.h1>
 
-      {/* The KUNTS (leave untouched) */}
+      {/* --- NFT Slider (FULLY VISIBLE + WORKING) --- */}
       <motion.div
         style={{ x: SmoothY }}
-        className="flex gap-5 2xl:gap-52 flex-row w-full justify-center absolute bottom-0"
+        className="flex gap-5 2xl:gap-52 flex-row w-full justify-center absolute bottom-0 
+        will-change-transform overflow-x-hidden"
       >
         {[kunt1, kunt2, kunt3, kunt4, kunt5].map((img, i) => (
           <Image
@@ -68,7 +72,10 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
       {/* Menu Clicked */}
       {isMenuOpen && (
         <AnimatePresence>
-          <MenuToggle setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+          <MenuToggle
+            setIsMenuOpen={setIsMenuOpen}
+            isMenuOpen={isMenuOpen}
+          />
         </AnimatePresence>
       )}
     </section>
