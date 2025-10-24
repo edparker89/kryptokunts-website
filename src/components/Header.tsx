@@ -42,10 +42,12 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
   // const smoothScroll = useSpring(translateX, { mass: 0.1, damping: 10 });
 
   return (
-    <section
-      style={{ backgroundImage: `url(${KK_header.src})` }}
-      className="w-full min-h-[70vh] sm:min-h-[80vh] md:min-h-[100vh] bg-no-repeat bg-cover bg-center relative overflow-hidden"
-    >
+      <section
+        style={{ backgroundImage: `url(${KK_header.src})` }}
+        className="w-screen min-h-[70vh] sm:min-h-[80vh] md:min-h-[100vh] 
+        bg-no-repeat bg-cover bg-center relative overflow-hidden 
+        overflow-x-hidden fixed:overflow-x-hidden"
+      >
       {/* layer blur */}
       <div className="w-full h-full backdrop-blur-[2px] absolute  top-0 left-0 z-[-1px]"></div>
 
@@ -54,26 +56,14 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
 
       {/* Title */}
       <motion.h1
-        className="text-[50px] md:text-[100px] leading-[80px] md:leading-[140px] lg:text-[100px] xl:text-[100px] text-center strokeFams text-white mt-52 lg:mt-80 z-[10] relative"
-        initial={{ scale: 0.5 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-        variants={{
-          hidden: { scale: 0.5 },
-          visible: {
-            scale: 1,
-            transition: {
-              staggerChildren: 0.1,
-            },
-          },
-        }}
+        className="relative z-[2] text-center text-white font-bold 
+        text-[2.5rem] sm:text-[3.5rem] md:text-[5rem] lg:text-[6rem] 
+        leading-tight mt-40 sm:mt-48 md:mt-64 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]"
+        initial={{ scale: 0.5, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
       >
-        <motion.span
-          variants={{ hidden: { scale: 0.3 }, visible: { scale: 0.5 } }}
-        >
-          KRYPTOKUNTS
-        </motion.span>
-
+        KRYPTOKUNTS
       </motion.h1>
 
       {/* The KUNTS */}
