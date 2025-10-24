@@ -44,7 +44,7 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
   return (
     <section
       style={{ backgroundImage: `url(${KK_header.src})` }}
-      className="w-full h-[700px] md:h-[1000px] bg-no-repeat bg-cover bg-fixed relative overflow-x-hidden "
+      className="w-full min-h-[70vh] sm:min-h-[80vh] md:min-h-[100vh] bg-no-repeat bg-cover bg-center relative overflow-hidden"
     >
       {/* layer blur */}
       <div className="w-full h-full backdrop-blur-[2px] absolute  top-0 left-0 z-[-1px]"></div>
