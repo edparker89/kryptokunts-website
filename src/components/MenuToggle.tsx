@@ -45,7 +45,9 @@ const MenuToggle: React.FC<stateMenuProps> = ({
       animate="visible"
       exit="hidden"
       variants={MenuToggleVariant}
-      className="w-full bg-[#1c1c1c]/90 backdrop-blur-sm fixed top-0 z-[100000] rounded-b-3xl border-[6px] border-black px-14 py-14 md:py-28"
+      className="fixed top-0 left-0 w-full max-w-[100vw] overflow-x-hidden 
+             bg-[#1c1c1c]/90 backdrop-blur-sm z-[100000] 
+             rounded-b-3xl border-b-[6px] border-black px-6 sm:px-10 py-14 md:py-28"
     >
       {/* Text Menu & Close Button */}
       <div className="flex justify-between items-start">
@@ -70,7 +72,7 @@ const MenuToggle: React.FC<stateMenuProps> = ({
                     ],
                     transition: { duration: 1.5, repeat: Infinity },
                   }}
-                  className="text-white text-4xl md:text-[40px] font-bold uppercase cursor-pointer transition-all duration-300"
+                  className="text-white text-[clamp(1.5rem,6vw,2.5rem)] font-bold uppercase cursor-pointer transition-all duration-300"
                 >
                   {menu.title}
                 </motion.h3>

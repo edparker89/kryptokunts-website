@@ -18,7 +18,8 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
     },
     {
       question: "What blockchain is KryptoKunts on?",
-      answer: "KryptoKunts lives on the Solana blockchain — chosen for its speed, low fees, and eco-friendly design. Unlike energy-heavy networks, Solana runs efficiently and uses a fraction of the power of traditional blockchains, aligning perfectly with our mission to support real-world conservation and sustainability 🌿⚡",
+      answer:
+        "KryptoKunts lives on the Solana blockchain — chosen for its speed, low fees, and eco-friendly design. Unlike energy-heavy networks, Solana runs efficiently and uses a fraction of the power of traditional blockchains, aligning perfectly with our mission to support real-world conservation and sustainability 🌿⚡",
     },
     {
       question: "What is the Mission of KryptoKunts",
@@ -46,12 +47,12 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
   return (
     <section
       id="faq"
-      className={`w-full container mx-auto px-4 xl:px-0 py-10 ${sectionClass}`}
+      className={`w-full overflow-x-hidden container mx-auto px-4 xl:px-0 py-10 ${sectionClass}`}
     >
       {/* Glowing Title */}
       <Rows className="justify-center mb-12">
         <h3
-          className="text-6xl text-center text-white font-bold uppercase"
+          className="text-[clamp(1.75rem,5vw,2.5rem)] text-center text-white font-bold uppercase"
           style={{
             textShadow:
               "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
@@ -65,35 +66,37 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
       <Rows className="flex-col gap-4">
         {faqContent.map((item, index) => (
           <Rows
+            key={index}
             onClick={() => handleQuestionClick(item.question)}
             className={`justify-between ${
               selectedQuestion === item.question ? "items-start" : "items-center"
-            } border-[3px] border-black p-8 rounded-lg cursor-pointer hover:bg-gray-400/10`}
-            key={index}
+            } border-[2px] border-black 
+              p-4 sm:p-6 md:p-8 
+              rounded-lg cursor-pointer hover:bg-gray-400/10 
+              transition-all duration-300 overflow-hidden`}
           >
-            <Rows className="flex-col gap-3">
+            <Rows className="flex-col gap-2 sm:gap-3 flex-1 pr-2">
               <h4
-                className={`text-4xl text-white ${
-                  selectedQuestion === item.question
-                    ? "text-[#b7c8a3]"
-                    : ""
+                className={`text-[clamp(1.1rem,4vw,1.75rem)] text-white font-bold ${
+                  selectedQuestion === item.question ? "text-[#b7c8a3]" : ""
                 }`}
               >
                 {item.question}
               </h4>
+
               {selectedQuestion === item.question && (
                 <p
                   dangerouslySetInnerHTML={{ __html: item.answer }}
-                  className="text-white/90 text-xl leading-relaxed"
+                  className="text-white/90 text-[clamp(1rem,3vw,1.25rem)] leading-relaxed"
                 ></p>
               )}
             </Rows>
 
-            <Rows>
+            <Rows className="flex-shrink-0">
               {selectedQuestion === item.question ? (
-                <Icon icon="mdi:minus" width="40" height="40" />
+                <Icon icon="mdi:minus" width="28" height="28" />
               ) : (
-                <Icon icon="mdi:plus" width="40" height="40" />
+                <Icon icon="mdi:plus" width="28" height="28" />
               )}
             </Rows>
           </Rows>

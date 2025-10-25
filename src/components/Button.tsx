@@ -25,9 +25,12 @@ const Button: React.FC<ButtonProps> = ({ children, className, onClick }) => {
       }}
       whileTap={{ scale: 0.9 }}
       onClick={onClick}
-      className={`text-black hover:text-[#b7c8a3] text-[32px] 
-                  bg-[#DFEAFF] border-[3px] border-black px-4 rounded-md 
-                  transition-all duration-300 ${className}`}
+      className={`text-black hover:text-[#b7c8a3] 
+                  text-[clamp(1.1rem,4vw,2rem)]     /* responsive 18–32 px */
+                  bg-[#DFEAFF] border-[3px] border-black 
+                  px-6 py-2 rounded-md 
+                  transition-all duration-300 
+                  ${className}`}
     >
       {children}
     </motion.button>

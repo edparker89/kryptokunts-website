@@ -11,12 +11,12 @@ const Team = ({ sectionClass }: { sectionClass?: string }) => {
   return (
     <section
       id="team"
-      className={`overflow-x-hidden xl:overflow-x-visible w-full container mx-auto px-4 xl:px-0 pt-20 pb-8 ${sectionClass}`}
+      className={`w-full overflow-x-hidden pt-20 pb-8 ${sectionClass}`}
     >
       {/* Section Title */}
-      <Rows className="text-center pb-20 justify-center">
+      <Rows className="justify-center pb-12 px-4">
         <h2
-          className="text-6xl text-white font-bold uppercase"
+          className="text-[clamp(1.75rem,5vw,2.5rem)] text-white font-bold uppercase text-center"
           style={{
             textShadow:
               "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
@@ -26,16 +26,15 @@ const Team = ({ sectionClass }: { sectionClass?: string }) => {
         </h2>
       </Rows>
 
-      {/* Grid: Left = Pic, Right = Story Text */}
-      {/* KEY CHANGE: items-center to vertically center both grid items */}
-      <Rows className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      {/* Grid: image + text */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Founder Image */}
         <div className="flex flex-col items-center gap-4">
           <motion.div
             initial={{ boxShadow: "0 0 10px 6px #69836255" }}
             whileHover={{
-              scale: 1.1,
-              rotate: 5,
+              scale: 1.05, // slightly reduced to avoid overflow
+              rotate: 3,
               zIndex: 20,
               boxShadow: [
                 "0 0 15px 6px #69836288",
@@ -44,45 +43,50 @@ const Team = ({ sectionClass }: { sectionClass?: string }) => {
               ],
               transition: { duration: 1.5, repeat: Infinity },
             }}
-            className="relative rounded-xl border-4 border-black transition-all duration-300"
+            className="relative rounded-xl border-4 border-black transition-all duration-300 overflow-hidden"
           >
             <Link href="https://x.com/edsakunt" target="_blank">
               <Image
                 src={artist}
                 alt="Founder"
-                className="max-w-full h-auto rounded-xl"
+                className="w-full max-w-[350px] h-auto rounded-xl object-cover"
+                priority
               />
             </Link>
           </motion.div>
 
-          <h4 className="text-3xl text-white">FOUNDER | DEV | ARTIST</h4>
+          <h4 className="text-[clamp(1.25rem,4vw,1.75rem)] text-white font-bold text-center">
+            FOUNDER | DEV | ARTIST
+          </h4>
           <Link href="https://x.com/edsakunt" target="_blank">
-            <p className="text-xl" style={{ color: "#698362" }}>
+            <p
+              className="text-[clamp(1rem,3vw,1.25rem)]"
+              style={{ color: "#698362" }}
+            >
               @edsakunt
             </p>
           </Link>
         </div>
 
         {/* Story Text */}
-        {/* KEY CHANGE: remove centering here; let it be left-aligned and it will sit mid-height thanks to grid items-center */}
         <div className="flex flex-col gap-6 text-white">
-          <p className="text-[20px] md:text-[24px] leading-relaxed">
+          <p className="text-[clamp(1rem,3.5vw,1.25rem)] leading-relaxed">
             KryptoKunts is built from the ground up by a single degen —{" "}
             <span className="font-bold">artist, builder, and founder.</span>
           </p>
-          <p className="text-[20px] md:text-[24px] leading-relaxed">
+          <p className="text-[clamp(1rem,3.5vw,1.25rem)] leading-relaxed">
             Born out of a desire to prove that{" "}
             <span className="font-bold">anyone</span> can create an NFT project,
             no matter your background or skillset, KryptoKunts is a testament to
             persistence, creativity, and degen energy.
           </p>
-          <p className="text-[20px] md:text-[24px] leading-relaxed">
+          <p className="text-[clamp(1rem,3.5vw,1.25rem)] leading-relaxed">
             From the art to the code, from the community to the vision — every
             part of KryptoKunts has been crafted by hand, showing that no barrier
             is too high when the undead are at your back.
           </p>
         </div>
-      </Rows>
+      </div>
     </section>
   );
 };

@@ -23,8 +23,8 @@ const ScrollingWolves = () => {
   ];
 
   return (
-    <div className="relative h-[200vh] overflow-hidden">
-      <div className="flex absolute bottom-0 w-full gap-5 justify-center">
+    <div className="relative h-[200vh] overflow-x-hidden overflow-y-visible">
+      <div className="flex absolute bottom-0 w-full gap-5 justify-center pointer-events-none">
         {wolves.map((wolf, index) => (
           <motion.div
             key={index}
@@ -34,7 +34,7 @@ const ScrollingWolves = () => {
           >
             <Image
               src={wolf.src}
-              alt={`Wolf ${index}`}
+              alt={`KUNT ${index}`}
               className="w-auto h-auto 2xl:scale-150 2xl:-translate-y-20"
             />
           </motion.div>

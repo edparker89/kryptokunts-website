@@ -27,24 +27,33 @@ const NavigationHeader: React.FC<stateMenuProps> = ({
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div
       className={`${
         isVisible ? "top-0" : "-top-full"
-      } transition-top duration-300 fixed w-full bg-transparent  z-[10000000] ${isMenuOpen ? 'hidden' : ''}`}
+      } fixed left-0 w-full max-w-[100vw] overflow-x-hidden 
+         bg-transparent z-[10000000] transition-[top] duration-300 ${
+           isMenuOpen ? "hidden" : ""
+         }`}
     >
-      <div className="flex flex-row-reverse md:flex-row justify-between items-center container mx-auto py-4 relative px-4 md:px-4 lg:px-4">
-        <Button onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          Menu
-        </Button>
-        <Image src={logo} alt="Logo" width={70} height={70} className="rounded-full " />
+      <div className="flex flex-row-reverse md:flex-row justify-between items-center max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-4 relative">
+        {/* Menu Button */}
+        <Button onClick={() => setIsMenuOpen(!isMenuOpen)}>Menu</Button>
+
+        {/* Logo */}
+        <Image
+          src={logo}
+          alt="Logo"
+          width={70}
+          height={70}
+          className="rounded-full"
+          priority
+        />
+
+        {/* Mint Button */}
         <Button
           onClick={() => window.open("https://mint.kryptokunts.com/", "_blank")}
           className="hidden md:block"
@@ -57,4 +66,3 @@ const NavigationHeader: React.FC<stateMenuProps> = ({
 };
 
 export default NavigationHeader;
-

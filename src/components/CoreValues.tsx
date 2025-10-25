@@ -36,11 +36,11 @@ export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
   return (
     <section
       id="values"
-      className={`overflow-x-hidden xl:overflow-x-visible w-full container mx-auto px-4 xl:px-0 pt-20 pb-10 ${sectionClass}`}
+      className={`overflow-x-hidden w-full container mx-auto px-4 xl:px-0 pt-20 pb-10 ${sectionClass}`}
     >
       <Rows className="justify-center">
         <h2
-          className="text-6xl text-center text-white font-bold uppercase"
+          className="text-[clamp(1.75rem,5vw,2.5rem)] text-center text-white font-bold uppercase"
           style={{
             textShadow:
               "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
@@ -54,14 +54,15 @@ export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
         {testimonials.map((item, index) => (
           <Rows
             key={index}
-            className="flex-col text-center items-center max-w-[420px]"
+            className="flex-col text-center items-center max-w-[420px] w-full px-2"
           >
-            <div className="flex justify-center items-center w-[460px] h-[300px]">
+            {/* Image card */}
+            <div className="flex justify-center items-center w-full max-w-[420px] h-auto">
               <motion.div
                 initial={{ boxShadow: "0 0 10px 10px #69836255" }}
                 whileHover={{
-                  scale: 1.2,
-                  rotate: 5,
+                  scale: 1.1,
+                  rotate: 3,
                   zIndex: 20,
                   boxShadow: [
                     "0 0 15px 4px #69836288",
@@ -73,7 +74,7 @@ export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
                 style={{ transformOrigin: "center center" }}
                 className="relative rounded-xl border-4 border-black transition-all duration-300 overflow-hidden box-border"
               >
-                <div className="w-[420px] h-[280px] relative">
+                <div className="relative w-full aspect-[3/2] max-w-[400px]">
                   <Image
                     src={item.src}
                     alt={item.name}
@@ -83,9 +84,13 @@ export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
                 </div>
               </motion.div>
             </div>
-            <h3 className="text-3xl pt-6 pb-6">{item.name}</h3>
+
+            {/* Heading + text */}
+            <h3 className="text-[clamp(1.25rem,4vw,1.75rem)] pt-6 pb-4 font-bold uppercase">
+              {item.name}
+            </h3>
             <p
-              className="text-white text-[20px] leading-relaxed"
+              className="text-white text-[clamp(1rem,3.5vw,1.25rem)] leading-relaxed"
               dangerouslySetInnerHTML={{ __html: item.quote }}
             />
           </Rows>

@@ -13,8 +13,7 @@ export function RoadMap() {
     {
       title: "☣️ PHASE 1",
       titleText: "RISE OF THE KUNTS",
-      description:
-        "The Outbreak Begins.",
+      description: "The Outbreak Begins.",
       list: [
         "The first wave of infection spreads across X (Twitter) and Web3 as the OG Horde assembles. The art is revealed, the lore seeps into the timeline, and the undead start recruiting the living. WL competitions, raid calls, and sneak peeks infect the feed.",
         "",
@@ -30,8 +29,7 @@ export function RoadMap() {
     {
       title: "🔥 PHASE 2",
       titleText: "MINT OR DIE",
-      description:
-        "The Infection Spreads.",
+      description: "The Infection Spreads.",
       list: [
         "The Horde hits critical mass. Mint goes live — blood, pixels, and chaos on-chain. The undead rise in full force as the collection sells out and new members stumble into the crypt. Community events, giveaways, and early token utility drop to keep the Horde hungry.",
         "",
@@ -63,11 +61,11 @@ export function RoadMap() {
   ];
 
   return (
-    <div id="roadmap" className="w-full mt-32">
+    <section id="roadmap" className="w-full overflow-x-hidden mt-32">
       {/* Section Title */}
-      <Rows className="justify-center pb-12">
+      <Rows className="justify-center pb-12 px-4">
         <h2
-          className="text-6xl text-center text-white font-bold uppercase"
+          className="text-[clamp(1.75rem,5vw,2.5rem)] text-center text-white font-bold uppercase"
           style={{
             textShadow:
               "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
@@ -79,22 +77,22 @@ export function RoadMap() {
 
       {/* Phases 1–3 */}
       {contentRoadMap.map((item, index) => (
-        <Rows className="flex-col pt-4 pb-2" key={index}>
-          <Rows className="w-full">
+        <div key={index} className="flex flex-col items-center">
+          <div className="w-full overflow-hidden">
             <Image
               src={item.bgImage}
-              alt="Roadmap"
-              className="w-full h-auto"
+              alt={`Roadmap Phase ${index + 1}`}
+              className="w-full h-auto object-cover"
+              priority={index === 0}
             />
-          </Rows>
+          </div>
 
           {/* Phase Content */}
-          <Rows className="flex-col lg:flex-row items-center lg:items-stretch justify-between container mx-auto py-12 px-4 xl:px-0 gap-8">
-            
-            {/* Phase Title - glowing + middle-left */}
-            <div className="flex lg:items-center lg:justify-start min-w-[180px]">
+          <Rows className="flex-col lg:flex-row items-center lg:items-start justify-between max-w-[1200px] mx-auto py-12 px-4 sm:px-6 gap-8">
+            {/* Phase Title */}
+            <div className="flex lg:items-center lg:justify-start min-w-[150px]">
               <h3
-                className="text-5xl text-white font-bold uppercase"
+                className="text-[clamp(1.5rem,5vw,2rem)] text-white font-bold uppercase"
                 style={{
                   textShadow:
                     "0 0 10px #698362aa, 0 0 20px #69836288, 0 0 30px #698362cc",
@@ -106,27 +104,33 @@ export function RoadMap() {
 
             {/* Content */}
             <Rows className="flex-col gap-4 max-w-[700px]">
-              <h4 className="text-4xl text-white">{item.titleText}</h4>
-              <p className="text-xl font-bold text-white/90">
+              <h4 className="text-[clamp(1.25rem,4vw,1.75rem)] text-white font-bold uppercase">
+                {item.titleText}
+              </h4>
+              <p className="text-[clamp(1rem,3.5vw,1.25rem)] font-bold text-white/90">
                 {item.description}
               </p>
-              <ul className="text-xl flex flex-col gap-3 text-white/80">
-                {item.list.map((listItem, index) => (
+              <ul className="text-[clamp(1rem,3vw,1.25rem)] flex flex-col gap-3 text-white/80">
+                {item.list.map((listItem, i) => (
                   <li
+                    key={i}
                     dangerouslySetInnerHTML={{ __html: listItem }}
-                    key={index}
                   ></li>
                 ))}
               </ul>
             </Rows>
           </Rows>
-        </Rows>
+        </div>
       ))}
 
       {/* Phase 4 image */}
-      <Rows className="w-full">
-        <Image src={Roadmap4} alt="Roadmap" className="w-full h-auto" />
-      </Rows>
-    </div>
+      <div className="w-full overflow-hidden">
+        <Image
+          src={Roadmap4}
+          alt="Roadmap End"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+    </section>
   );
 }

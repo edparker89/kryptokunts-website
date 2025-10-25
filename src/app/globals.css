@@ -16,8 +16,6 @@
   }
 }
 
-
-
 @font-face {
     font-family: "Shadow of the deads";
     src: url("https://db.onlinewebfonts.com/t/db0603146267fd97cb357d5c2807c44a.eot");
@@ -81,4 +79,9 @@ body {
 
 @layer utilities {
 
+}
+
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
 }
