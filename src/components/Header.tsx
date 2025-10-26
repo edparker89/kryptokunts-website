@@ -20,60 +20,40 @@ interface stateMenuProps {
 
 export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
   const { scrollY } = useScroll();
-
   const SmoothY = useSpring(scrollY, { mass: 0.5, damping: 20 });
-
-  // useMotionValueEvent(scrollY, "change", (latest) => {
-  //   console.log("Page scroll: ", latest)
-  // })
-
-  // const element = useRef(null);
-  // const {scrollYProgress} = useScroll({
-  //   target: element,
-  //   offset: ['start 20%', 'start center']
-  // })
-
-  // useEffect(() => {
-  //   scrollYProgress.on("change", e => console.log(e))
-  // }, [ scrollYProgress])
-
-  // Map scroll progress to translateX
-  // const translateX = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
-  // const smoothScroll = useSpring(translateX, { mass: 0.1, damping: 10 });
 
   return (
     <section
+      className="relative w-full h-[600px] sm:h-[700px] md:h-[900px] lg:h-[1000px] overflow-x-hidden bg-no-repeat bg-cover bg-fixed"
       style={{ backgroundImage: `url(${KK_header.src})` }}
-      className="w-full h-[700px] md:h-[1000px] bg-no-repeat bg-cover bg-fixed relative overflow-x-hidden "
     >
-      {/* layer blur */}
-      <div className="w-full h-full backdrop-blur-[2px] absolute  top-0 left-0 z-[-1px]"></div>
+      {/* Mobile background fallback (since bg-fixed often fails on iOS) */}
+      <div className="absolute inset-0 md:hidden">
+        <Image
+          src={KK_header}
+          alt="KryptoKunts Header"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </div>
 
-      {/* Navigation Menus */}
+      {/* Blur overlay */}
+      <div className="absolute inset-0 backdrop-blur-[2px] -z-10" />
+
+      {/* Navigation */}
       <NavigationHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
       {/* Title */}
       <motion.h1
-        className="text-[50px] md:text-[100px] leading-[80px] md:leading-[140px] lg:text-[100px] xl:text-[100px] text-center strokeFams text-white mt-52 lg:mt-80 z-[10] relative"
+        className="relative z-[2] text-center text-white strokeFams mt-40 sm:mt-48 md:mt-60 lg:mt-80 
+        text-[36px] leading-[48px] sm:text-[48px] sm:leading-[60px] 
+        md:text-[80px] md:leading-[110px] lg:text-[100px] lg:leading-[140px]"
         initial={{ scale: 0.5 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-        variants={{
-          hidden: { scale: 0.5 },
-          visible: {
-            scale: 1,
-            transition: {
-              staggerChildren: 0.1,
-            },
-          },
-        }}
+        transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
       >
-        <motion.span
-          variants={{ hidden: { scale: 0.3 }, visible: { scale: 0.5 } }}
-        >
-          KRYPTOKUNTS
-        </motion.span>
-
+        <motion.span>KRYPTOKUNTS</motion.span>
       </motion.h1>
 
       {/* The KUNTS */}
@@ -93,7 +73,7 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
       ))}
       </motion.div>
 
-      {/* Menu Clicked */}
+      {/* Menu open overlay */}
       {isMenuOpen && (
         <AnimatePresence>
           <MenuToggle setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
