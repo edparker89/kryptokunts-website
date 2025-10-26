@@ -18,7 +18,8 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
     },
     {
       question: "What blockchain is KryptoKunts on?",
-      answer: "KryptoKunts lives on the Solana blockchain — chosen for its speed, low fees, and eco-friendly design. Unlike energy-heavy networks, Solana runs efficiently and uses a fraction of the power of traditional blockchains, aligning perfectly with our mission to support real-world conservation and sustainability 🌿⚡",
+      answer:
+        "KryptoKunts lives on the Solana blockchain — chosen for its speed, low fees, and eco-friendly design. Unlike energy-heavy networks, Solana runs efficiently and uses a fraction of the power of traditional blockchains, aligning perfectly with our mission to support real-world conservation and sustainability 🌿⚡",
     },
     {
       question: "What is the Mission of KryptoKunts",
@@ -51,7 +52,7 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
       {/* Glowing Title */}
       <Rows className="justify-center mb-12">
         <h3
-          className="text-6xl text-center text-white font-bold uppercase"
+          className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[72px] text-center text-white font-bold uppercase"
           style={{
             textShadow:
               "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
@@ -74,9 +75,7 @@ export const Faq = ({ sectionClass }: { sectionClass?: string }) => {
             <Rows className="flex-col gap-3">
               <h4
                 className={`text-4xl text-white ${
-                  selectedQuestion === item.question
-                    ? "text-[#b7c8a3]"
-                    : ""
+                  selectedQuestion === item.question ? "text-[#b7c8a3]" : ""
                 }`}
               >
                 {item.question}

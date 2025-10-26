@@ -16,7 +16,7 @@ const Team = ({ sectionClass }: { sectionClass?: string }) => {
       {/* Section Title */}
       <Rows className="text-center pb-20 justify-center">
         <h2
-          className="text-6xl text-white font-bold uppercase"
+          className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[72px] text-white font-bold uppercase"
           style={{
             textShadow:
               "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
@@ -27,7 +27,6 @@ const Team = ({ sectionClass }: { sectionClass?: string }) => {
       </Rows>
 
       {/* Grid: Left = Pic, Right = Story Text */}
-      {/* KEY CHANGE: items-center to vertically center both grid items */}
       <Rows className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Founder Image */}
         <div className="flex flex-col items-center gap-4">
@@ -64,7 +63,6 @@ const Team = ({ sectionClass }: { sectionClass?: string }) => {
         </div>
 
         {/* Story Text */}
-        {/* KEY CHANGE: remove centering here; let it be left-aligned and it will sit mid-height thanks to grid items-center */}
         <div className="flex flex-col gap-6 text-white">
           <p className="text-[20px] md:text-[24px] leading-relaxed">
             KryptoKunts is built from the ground up by a single degen —{" "}
