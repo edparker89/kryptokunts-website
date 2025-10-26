@@ -49,7 +49,8 @@ const MenuToggle: React.FC<stateMenuProps> = ({
     >
       {/* Text Menu & Close Button */}
       <div className="flex justify-between items-start">
-        <ul className="flex flex-wrap gap-6 sm:gap-10 md:gap-20 w-5/6">
+        {/* Menu list */}
+        <ul className="flex flex-col md:flex-wrap gap-6 sm:gap-8 md:gap-20 w-5/6">
           {menuLink.map((menu, index) => (
             <li key={index}>
               <button
@@ -79,6 +80,7 @@ const MenuToggle: React.FC<stateMenuProps> = ({
           ))}
         </ul>
 
+        {/* Close button */}
         <Button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="px-[2px] py-[2px] md:px-4 md:py-4"
