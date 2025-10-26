@@ -45,11 +45,11 @@ const MenuToggle: React.FC<stateMenuProps> = ({
       animate="visible"
       exit="hidden"
       variants={MenuToggleVariant}
-      className="w-full bg-[#1c1c1c]/90 backdrop-blur-sm fixed top-0 z-[100000] rounded-b-3xl border-[6px] border-black px-14 py-14 md:py-28"
+      className="w-full bg-[#1c1c1c]/90 backdrop-blur-sm fixed top-0 z-[100000] rounded-b-3xl border-[6px] border-black px-8 sm:px-10 md:px-14 py-10 sm:py-14 md:py-28"
     >
       {/* Text Menu & Close Button */}
       <div className="flex justify-between items-start">
-        <ul className="flex flex-wrap gap-10 md:gap-20 w-5/6">
+        <ul className="flex flex-wrap gap-6 sm:gap-10 md:gap-20 w-5/6">
           {menuLink.map((menu, index) => (
             <li key={index}>
               <button
@@ -59,7 +59,7 @@ const MenuToggle: React.FC<stateMenuProps> = ({
                 <motion.h3
                   initial={{
                     scale: 1,
-                    textShadow: "0 0 12px #69836255", // bigger idle glow
+                    textShadow: "0 0 12px #69836255",
                   }}
                   whileHover={{
                     scale: 1.1,
@@ -70,11 +70,10 @@ const MenuToggle: React.FC<stateMenuProps> = ({
                     ],
                     transition: { duration: 1.5, repeat: Infinity },
                   }}
-                  className="text-white text-4xl md:text-[40px] font-bold uppercase cursor-pointer transition-all duration-300"
+                  className="text-white text-[26px] sm:text-[32px] md:text-[40px] font-bold uppercase cursor-pointer transition-all duration-300"
                 >
                   {menu.title}
                 </motion.h3>
-
               </button>
             </li>
           ))}
@@ -86,7 +85,7 @@ const MenuToggle: React.FC<stateMenuProps> = ({
         >
           <Icon
             icon="material-symbols:close"
-            className="w-8 h-8 md:w-[46px] md:h-[46px]"
+            className="w-7 h-7 sm:w-8 sm:h-8 md:w-[46px] md:h-[46px]"
           />
         </Button>
       </div>

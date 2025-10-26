@@ -89,7 +89,7 @@ export function RoadMap() {
             {/* Phase Title */}
             <div className="flex lg:items-center lg:justify-start min-w-[180px] text-center lg:text-left">
               <h3
-                className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[52px] text-white font-bold uppercase"
+                className="text-[24px] sm:text-[32px] md:text-[44px] lg:text-[52px] text-white font-bold uppercase"
                 style={{
                   textShadow:
                     "0 0 10px #698362aa, 0 0 20px #69836288, 0 0 30px #698362cc",
