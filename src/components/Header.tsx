@@ -47,7 +47,7 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }: stateMenuProps) => {
       {/* Title */}
       <motion.h1
         className="relative z-[2] text-center text-white strokeFams mt-40 sm:mt-48 md:mt-60 lg:mt-80 
-        text-[36px] leading-[48px] sm:text-[48px] sm:leading-[60px] 
+        text-[28px] leading-[38px] sm:text-[42px] sm:leading-[55px] 
         md:text-[80px] md:leading-[110px] lg:text-[100px] lg:leading-[140px]"
         initial={{ scale: 0.5 }}
         animate={{ scale: 1 }}

@@ -31,9 +31,10 @@ export const ParallaxScroll = ({
 
   return (
     <>
-      <div id="nftgallery" className="text-6xl py-8 mb-8">
+      <div id="nftgallery" className="py-8 mb-8">
         <h2
-          className="text-center text-white font-bold uppercase"
+          className="text-center text-white font-bold uppercase 
+          text-[32px] sm:text-[40px] md:text-[48px] lg:text-[60px] xl:text-[72px]"
           style={{
             textShadow:
               "0 0 15px #698362aa, 0 0 30px #69836288, 0 0 45px #698362cc",
