@@ -36,7 +36,7 @@ export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
   return (
     <section
       id="values"
-      className={`overflow-x-hidden xl:overflow-x-visible w-full container mx-auto px-4 sm:px-6 xl:px-0 pt-20 pb-10 ${sectionClass}`}
+      className={`overflow-x-hidden xl:overflow-x-visible w-full container mx-auto px-4 sm:px-6 xl:px-0 pt-20 pb-6 ${sectionClass}`}
     >
       {/* Section Title */}
       <Rows className="justify-center">
