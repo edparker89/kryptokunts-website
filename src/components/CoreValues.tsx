@@ -21,13 +21,13 @@ export const CoreValues = ({ sectionClass }: { sectionClass?: string }) => {
     },
     {
       quote:
-        "KryptoKunts was spawned by one shambling undead degen with zero art school, coding bootcamp, or marketing degree to their name — just pure, unrelenting grind. Every pixel, every line of code, every page you see was clawed into existence through stubbornness and caffeine.<br/><br>If this zombified lunatic can do it, so can you. 💪<br/><br>That's why KryptoKunts shares its guts and glory — tutorials, tips, and behind-the-scenes breakdowns — to help others rise from the digital grave and build their own unstoppable communities.",
+        "KryptoKunts was spawned by one shambling undead degen with zero art school, coding bootcamp, or marketing degree to their name — just pure, unrelenting grind. Every pixel, every line of code, every page you see was clawed into existence through stubbornness and caffeine.<br/><br>If this zombified lunatic can do it, so can you 💪.<br/><br>That's why KryptoKunts shares its guts and glory — tutorials, tips, and behind-the-scenes breakdowns — to help others rise from the digital grave and build their own unstoppable communities.",
       name: "EDUCATION",
       src: education,
     },
     {
       quote:
-        "KryptoKunts isn't just undead — it's undying for the planet. As part of the Horde for Good, every mint helps rewild real habitats and fight back against the human-made apocalypse that started it all: habitat loss, climate chaos, and biodiversity collapse.<br/><br>From restoring nature one hectare at a time to building on Solana, one of the most eco-friendly blockchains in Web3, KryptoKunts proves that even the undead can give life back to the planet. 🌱",
+        "KryptoKunts isn't just undead — it's undying for the planet. As part of the Horde for Good, every mint helps rewild real habitats and fight back against the human-made apocalypse that started it all: habitat loss, climate chaos, and biodiversity collapse.<br/><br>From restoring nature one hectare at a time to building on Solana, one of the most eco-friendly blockchains in Web3, KryptoKunts proves that even the undead can give life back to the planet 🌱.",
       name: "SUSTAINABILITY",
       src: sustainability,
     },
