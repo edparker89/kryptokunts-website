@@ -51,7 +51,7 @@ const About = ({ sectionClass }: { sectionClass?: string }) => {
 
           <div className="py-8">
             <Button
-              onClick={() => window.open("https://discord.gg/56z9V3B5", "_blank")}
+              onClick={() => window.open("https://discord.gg/e5d4pkwtsY", "_blank")}
             >
               Join Community
             </Button>
